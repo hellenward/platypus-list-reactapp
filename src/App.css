@@ -19,6 +19,19 @@ body {
   background-color: cornsilk;
 }
 
+.checkbox {
+  float: left;
+  position: relative;
+  top: 80px;
+  left: 20px;
+  background-color: cornsilk;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 80%;
+  font-size: 18px;
+  text-align: left;
+}
+
 .menuBox {
   background-color: cornsilk;
   float: left;
