@@ -3,7 +3,7 @@ import ToDoItem from "./todoitem.jsx";
 
 const ToDoList = props => {
   return (
-    <div>
+    <div className="checkbox">
       <ToDoItem />
       <ToDoItem />
       <ToDoItem />

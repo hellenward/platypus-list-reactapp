@@ -12,7 +12,7 @@ class ToDoItem extends React.Component {
   render() {
     return (
       <div>
-        <label className="checkbox">
+        <label>
           <Checkbox
             checked={this.state.checked}
             onChange={this.handleCheckBoxChange}
