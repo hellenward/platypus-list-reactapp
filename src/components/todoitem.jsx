@@ -1,4 +1,5 @@
 import React from "react";
+const data = require("../data.json");
 
 const Checkbox = props => <input type="checkbox" {...props} />;
 

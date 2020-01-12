@@ -1,0 +1,5 @@
+[
+  { "task": "Drink the tea", "List": "Current List", "Completed": false },
+  { "task": "Tidy the kitchen", "List": "Current List", "Completed": false },
+  { "task": "Wake up", "List": "Current List", "Completed": true }
+]
