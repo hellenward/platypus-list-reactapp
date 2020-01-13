@@ -1,4 +1,5 @@
 import React from "react";
+import { Row, Col } from "react-bootstrap";
 
 const Checkbox = props => <input type="checkbox" {...props} />;
 
@@ -11,15 +12,17 @@ class ToDoItem extends React.Component {
 
   render() {
     return (
-      <div>
-        <label>
-          <Checkbox
-            checked={this.state.checked}
-            onChange={this.handleCheckBoxChange}
-          />
-          <span>{this.props.toDo.task}</span>
-        </label>
-      </div>
+      <Row>
+        <Col>
+          <label>
+            <Checkbox
+              checked={this.state.checked}
+              onChange={this.handleCheckBoxChange}
+            />
+            <span>{this.props.toDo.task}</span>
+          </label>
+        </Col>
+      </Row>
     );
   }
 }

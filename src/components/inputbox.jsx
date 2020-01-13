@@ -1,15 +1,15 @@
 import React from "react";
+import { Col } from "react-bootstrap";
 
 const InputBox = () => {
   return (
-    <p>
+    <Col xs="3">
       <input
-        className="inputText"
         type="text"
         name="todo"
         value="Add something to your list..."
       ></input>
-    </p>
+    </Col>
   );
 };
 

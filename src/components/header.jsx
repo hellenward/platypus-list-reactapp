@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Navbar } from "react-bootstrap";
 
 class Header extends Component {
   state = {
@@ -11,16 +12,12 @@ class Header extends Component {
 
   render() {
     return (
-      <div>
-        <h1 className="header">{this.state.header}</h1>
-        <button
-          className="shareButton"
-          type="submit"
-          onClick={this.handleClick}
-        >
+      <Navbar bg="light">
+        <h1>{this.state.header}</h1>
+        <button type="submit" onClick={this.handleClick}>
           Share
         </button>
-      </div>
+      </Navbar>
     );
   }
 }
