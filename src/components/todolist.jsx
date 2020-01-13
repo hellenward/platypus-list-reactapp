@@ -2,16 +2,9 @@ import React from "react";
 import ToDoItem from "./todoitem.jsx";
 
 const ToDoList = props => {
-  return (
-    <div className="checkbox">
-      <ToDoItem />
-      <ToDoItem />
-      <ToDoItem />
-      <ToDoItem />
-      <ToDoItem />
-      <ToDoItem />
-    </div>
-  );
+  return props.toDos.map(toDo => {
+    return <ToDoItem toDo={toDo} />;
+  });
 };
 
 export default ToDoList;

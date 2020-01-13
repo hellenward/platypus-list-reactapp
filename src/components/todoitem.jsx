@@ -1,5 +1,4 @@
 import React from "react";
-const data = require("../data.json");
 
 const Checkbox = props => <input type="checkbox" {...props} />;
 
@@ -18,7 +17,7 @@ class ToDoItem extends React.Component {
             checked={this.state.checked}
             onChange={this.handleCheckBoxChange}
           />
-          <span>To Do Item</span>
+          <span>{this.props.toDo.task}</span>
         </label>
       </div>
     );
