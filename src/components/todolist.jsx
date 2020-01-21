@@ -4,11 +4,11 @@ import { Col } from "react-bootstrap";
 
 const ToDoList = props => {
   return (
-    <Col xs="3">
+    <div>
       {props.toDos.map((toDo, key) => {
         return <ToDoItem toDo={toDo} key={key} />;
       })}
-    </Col>
+    </div>
   );
 };
 

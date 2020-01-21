@@ -6,17 +6,10 @@ class Header extends Component {
     header: "Current List"
   };
 
-  handleClick = () => {
-    alert("You clicked me!");
-  };
-
   render() {
     return (
-      <Navbar bg="light">
+      <Navbar>
         <h1>{this.state.header}</h1>
-        <button type="submit" onClick={this.handleClick}>
-          Share
-        </button>
       </Navbar>
     );
   }
