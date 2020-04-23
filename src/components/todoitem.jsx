@@ -1,27 +1,19 @@
 import React from "react";
 
-const Checkbox = props => <input type="checkbox" {...props} />;
+const Checkbox = (props) => <input type="checkbox" {...props} />;
 
-class ToDoItem extends React.Component {
-  state = { checked: false };
+const toDoItem = (props) => {
+  return (
+    <div>
+      <label>
+        <Checkbox
+          checked={props.toDo.Completed}
+          onChange={console.log("clicked")}
+        />
+        <span>{props.toDo.task}</span>
+      </label>
+    </div>
+  );
+};
 
-  handleCheckBoxChange = event => {
-    this.setState({ checked: event.target.checked });
-  };
-
-  render() {
-    return (
-      <div>
-        <label>
-          <Checkbox
-            checked={this.state.checked}
-            onChange={this.handleCheckBoxChange}
-          />
-          <span>{this.props.toDo.task}</span>
-        </label>
-      </div>
-    );
-  }
-}
-
-export default ToDoItem;
+export default toDoItem;

@@ -1,8 +1,7 @@
 import React from "react";
 import ToDoItem from "./todoitem.jsx";
-import { Col } from "react-bootstrap";
 
-const ToDoList = props => {
+const ToDoList = (props) => {
   return (
     <div>
       {props.toDos.map((toDo, key) => {

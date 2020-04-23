@@ -19,17 +19,19 @@ class InputBox extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Enter text here :
-          <input
-            type="text"
-            name="todo"
-            value={this.state.value}
-            onChange={this.handleChange}
-          ></input>
-        </label>
-      </form>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Enter text here:
+            <input
+              type="text"
+              name="todo"
+              value={this.state.value}
+              onChange={this.handleChange}
+            ></input>
+          </label>
+        </form>
+      </div>
     );
   }
 }
