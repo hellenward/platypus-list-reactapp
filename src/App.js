@@ -16,7 +16,17 @@ class App extends Component {
       { task: "Tidy the kitchen", List: "Current List", Completed: false },
       { task: "Wake up", List: "Current List", Completed: true },
     ],
+    value: " ",
   };
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
+  handleSubmit(event) {
+    alert("Submitted thing was submitted: " + this.state.value);
+    event.preventDefalut();
+  }
 
   render() {
     return (
@@ -35,7 +45,11 @@ class App extends Component {
             <Menu />
           </Col>
           <Col xs>
-            <InputBox />
+            <InputBox
+              addItem={this.handleSubmit}
+              value={this.state.value}
+              handleChange={this.handleChange}
+            />
             <ToDoList toDos={this.state.toDo} />
             {/*      <CompletedList toDos={completedArray} /> */}
           </Col>
